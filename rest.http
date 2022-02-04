@@ -1,0 +1,32 @@
+
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDM5NTc3NDksImV4cCI6MTY0Mzk2MTM0OSwiYXVkIjoiNjFmY2NkZjQ3MThlYTZhZWJjZGMyYjJhIiwiaXNzIjoic2FiaW5zdWJlZGkuY29tIn0.8NIxfPb46CsdIoA_UMylI8ncTfW6PZHgytT7ZrNnRd8
+
+
+
+### Login route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "hello@gmail.com",
+    "password": "password"
+}
+
+
+### Register route 
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+
+{
+    "email": "hello3@gmail.com",
+    "password": "password"
+}
+
+### logout route
+DELETE http://localhost:3000/auth/logout
+
+
+### refresh token route
+POST http://localhost:3000/auth/refresh-token
